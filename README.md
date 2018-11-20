@@ -48,7 +48,7 @@ request.on(type, function(){});
 Launch the connection:
 
 ```js
-request.connect(new url || auto setup to the default url);
+request.connect("new url || auto setup to the default url");
 ```
 
 How to know if the connection is ok ?
