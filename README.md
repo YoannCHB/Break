@@ -9,10 +9,10 @@ Ne fonctionne pas sur Visual Studio !
 # Support - WebSocket:
 > messages, send, connection.
 
-# On:
+# Break.On:
 > message, open, close, error
 
-# Use:
+# How to Use:
 
 Define the variable without launching the query:
 
