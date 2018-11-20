@@ -9,6 +9,9 @@ Ne fonctionne pas sur Visual Studio !
 # Support - WebSocket:
 > messages, send, connection.
 
+# On:
+> message, open, close, error
+
 # Use:
 
 Define the variable without launching the query:
@@ -31,10 +34,6 @@ request.on('open', function(response){
   console.log(response);
 });
 ```
-
-# On:
-> message, open, close, error
-
 Send:
 ```js
 request.on('open', function(response){
