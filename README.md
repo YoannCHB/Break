@@ -13,6 +13,9 @@ Ne fonctionne pas sur Visual Studio !
 # Break.On:
 > message, open, close, error
 
+Command:
+---------------------------------------------------------------------
+> .type, .json, .url, .response, .send, .connected, .error
 
 Exemple:
 -------------------------------------------------
