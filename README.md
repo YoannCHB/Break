@@ -1,5 +1,6 @@
 # Break
 BREAK IS AN APPLICATION TO MAKE AUTOMATICALLY A REQUEST ON A SERVER AND AUTOMATICALLY SETUP THE URL ON ERROR (http to ws) !
+-----------------
 #<img alt="Break" title="Break" src="img/break.png"/>
 Ne fonctionne pas sur Visual Studio !
 
