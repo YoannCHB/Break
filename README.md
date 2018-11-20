@@ -38,6 +38,6 @@ request.on('open', function(response){
 Send:
 ```js
 request.on('open', function(response){
-  request.send("I m connected');
+  request.send("I m connected");
 });
 ```
