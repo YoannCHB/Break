@@ -13,6 +13,26 @@ Ne fonctionne pas sur Visual Studio !
 # Break.On:
 > message, open, close, error
 
+
+Exemple:
+-------------------------------------------------
+```js
+var req = new Request("https://echo.websocket.org");
+req.on('message', function(msg){
+  console.log(msg);
+});
+req.on('error', function(e){
+  console.error(e);
+})
+req.on('close', function(){
+  console.info("Server closed !");
+})
+req.on('open', function(response){
+  console.info(response); //JSON
+  req.send('Connection effectued');
+})
+```
+
 # How to Use:
 
 Define the variable without launching the query:
@@ -40,23 +60,4 @@ Send:
 request.on('open', function(response){
   request.send("I m connected");
 });
-```
-
-Exemple:
--------------------------------------------------
-```js
-var req = new Request("https://echo.websocket.org");
-req.on('message', function(msg){
-  console.log(msg);
-});
-req.on('error', function(e){
-  console.error(e);
-})
-req.on('close', function(){
-  console.info("Server closed !");
-})
-req.on('open', function(response){
-  console.info(response); //JSON
-  req.send('Connection effectued');
-})
 ```
