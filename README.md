@@ -18,3 +18,26 @@ var request = new Request();
 request.on(type, function(){});
 ```
 
+Launch the connection:
+
+```js
+request.connect(new url || auto setup to the default url);
+```
+
+How to know if the connection is ok ?
+
+```js
+request.on('open', function(response){
+  console.log(response);
+});
+```
+
+# On:
+> message, open, close, error
+
+Send:
+```js
+request.on('open', function(response){
+  request.send("I m connected');
+});
+```
