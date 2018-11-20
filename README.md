@@ -8,3 +8,13 @@ Ne fonctionne pas sur Visual Studio !
 
 # Support - WebSocket:
 > messages, send, connection.
+
+# Use:
+
+Define the variable without launching the query:
+
+```js
+var request = new Request();
+request.on(type, function(){});
+```
+
