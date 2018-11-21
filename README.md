@@ -1,5 +1,4 @@
 # Break - beta (in build)
-BREAK IS AN APPLICATION TO MAKE AUTOMATICALLY A REQUEST ON A SERVER AND AUTOMATICALLY SETUP THE URL ON ERROR (http to ws) !
 -----------------
 
 [![npm](https://img.shields.io/npm/v/anticore.svg?style=plastic)]()
