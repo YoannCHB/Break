@@ -13,6 +13,7 @@ Break allows you to easily create any type of request to a server. But not only 
 
 ## What is new in v1 ?
 
+* Request become BreakRequest
 * New support: Port
 * New Command: element.correctURL, element.listen
 * New auto: support document.location.href
