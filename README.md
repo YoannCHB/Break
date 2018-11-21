@@ -2,6 +2,10 @@
 BREAK IS AN APPLICATION TO MAKE AUTOMATICALLY A REQUEST ON A SERVER AND AUTOMATICALLY SETUP THE URL ON ERROR (http to ws) !
 -----------------
 
+[![npm](https://img.shields.io/npm/v/anticore.svg?style=plastic)]()
+[![Downloads](https://img.shields.io/npm/dt/anticore.svg?style=plastic)]()
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 #<img alt="Break" title="Break" src="img/break.png"/>
 
 ## Why you need to use "Break" ?
