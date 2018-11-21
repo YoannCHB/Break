@@ -40,13 +40,13 @@ Exemple:
 ```js
 var req = new Request("https://echo.websocket.org");
 req.on('message', function(msg){
-  console.log(msg);
+  console.log(msg.data);
 });
 req.on('error', function(e){
   console.error(e);
 })
-req.on('close', function(){
-  console.info("Server closed !");
+req.on('close', function(e){
+  console.warn("Server closed ! : "+e);
 })
 req.on('open', function(response){
   console.info(response); //JSON
