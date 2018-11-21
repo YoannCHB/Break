@@ -11,6 +11,14 @@
 Break allows you to easily create any type of request to a server. But not only ! It automatically corrects the urls in case of problems and will come to define itself automatically: the url, the type of request and the type of send. Break also allows response backup as well as a responseJSON if possible. Finally, it automatically detects and manages any type of error and sends it back to you in case of problems!
 * We can say that Break fully manages your requests and any type of response from the server.
 
+## What is new in v1 ?
+
+* New support: Port
+* New Command: element.correctURL, element.listen
+* New auto: support document.location.href
+* Bug setting
+* Readme update
+
 # Support - XMLHttpRequest:
 * Send
 * POST
