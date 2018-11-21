@@ -113,7 +113,7 @@ const auto_verif = function(url){
         let g = s[s.length-1];
     for(var i = 0; i < auto_ext.length; i++){
         if(g == auto_ext[i]){
-            return "http://";
+            return "https://";
         }
     }
     }
