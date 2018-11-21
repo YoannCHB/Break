@@ -5,7 +5,7 @@
 Exemple:
 -------------------------------------------------
 ```js
-var req = new Briksrequest("https://echo.websocket.org"); //BREAK AUTOMATICALLY SET THE URL ON 'wss://echo.websocket.org'
+var req = new BricksRequest("https://echo.websocket.org"); //BREAK AUTOMATICALLY SET THE URL ON 'wss://echo.websocket.org'
 req.on('message', function(msg){
   console.log(msg.data);
 });
@@ -30,7 +30,7 @@ req.connect();
 Define the variable without launching the query:
 
 ```js
-var request = new Briksrequest("url");
+var request = new BricksRequest("url");
 request.on(type, function(){}); //SEE 'https://github.com/YoannCHB/Break#support--all'
 ```
 
