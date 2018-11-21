@@ -13,11 +13,10 @@ Break allows you to easily create any type of request to a server. But not only 
 
 ## What is new in v1 ?
 
-* New system of correction in the URL look at the [[API]](https://github.com/YoannCHB/Break/blob/master/doc/api.md)
+*  Two new system of correction in the URL look at the [[API]](https://github.com/YoannCHB/Break/blob/master/doc/api.md)
 * Request become BreakRequest
 * New support: Port
 * New Command: element.correctURL, element.listen
-* New auto: support document.location.href
 * Bug setting
 * Readme update
 
