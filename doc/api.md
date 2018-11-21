@@ -21,6 +21,7 @@ req.on('open', function(response){
 	}
 	req.send('Connection effectued');
 })
+//req.listen(3000);
 req.connect();
 ```
 
@@ -64,4 +65,5 @@ req.send //SEND
 req.connected //RETURN THE STATUS
 req.error //RETURN THE STATUS
 req.correctURL //RETURN CORRIGED URL
+req.listen //FUNCTION TO SET A PORT (example: https://localhost:3000)
 ```
