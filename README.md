@@ -19,6 +19,7 @@ Break allows you to easily create any type of request to a server. But not only 
 * New Command: element.correctURL, element.listen
 * Bug setting
 * Readme update
+* API update
 
 # Support - XMLHttpRequest:
 * Send
