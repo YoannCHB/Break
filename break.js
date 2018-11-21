@@ -106,11 +106,11 @@ BreakRequest.prototype.connect = function(url){
     let save = url;
     url = url || this.url;
     if(!auto_url(url)){
-        url = document.location.href+url;
+        url = "https://"+save;
         if(!auto_url(url)){
             url = "http://"+save;
             if(!auto_url(url)){
-                url = "https://"+save;
+                url = document.location.href+url;
                 if(!auto_url(url)){
                     console.error('INVALID URL: '+element.url);
                     return false;
