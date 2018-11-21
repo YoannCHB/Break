@@ -64,7 +64,7 @@ Define the variable without launching the query:
 
 ```js
 var request = new Request();
-request.on(type, function(){}); //SEE #Command
+request.on(type, function(){}); //SEE 'https://github.com/YoannCHB/Break/blob/master/README.md#command'
 ```
 
 Launch the connection:
