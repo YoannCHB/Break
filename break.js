@@ -19,7 +19,7 @@ const auto_url = function(u){
     }
 }
 
-class BricksRequest{
+class BreakRequest{
     constructor(url){
         this.type = null;
         this.method = 'GET';
@@ -37,7 +37,7 @@ class BricksRequest{
     }
 }
 
-BricksRequest.prototype.listen = function(p){
+BreakRequest.prototype.listen = function(p){
     this.url += ":"+p;
 }
 
@@ -101,7 +101,7 @@ const auto_proto2 = function(el, url){
     }
 }
 
-BricksRequest.prototype.connect = function(url){
+BreakRequest.prototype.connect = function(url){
     let element = this;
     url = url || this.url;
     if(!auto_url(url)){
@@ -143,7 +143,7 @@ BricksRequest.prototype.connect = function(url){
     this.proto1.send();
 }
 
-BricksRequest.prototype.on = function(p, call){
+BreakRequest.prototype.on = function(p, call){
     try{
         p = p.toLowerCase();
     }
