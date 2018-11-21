@@ -33,12 +33,6 @@ var request = new Request();
 request.on(type, function(){}); //SEE 'https://github.com/YoannCHB/Break/blob/master/README.md#command'
 ```
 
-Launch the connection:
-
-```js
-request.connect("new url || auto setup to the default url");
-```
-
 How to know if the connection is ok ?
 
 ```js
@@ -51,4 +45,10 @@ Send:
 request.on('open', function(response){
   request.send("I m connected");
 });
+```
+
+Launch the connection:
+
+```js
+request.connect("new url || auto setup to the default url");
 ```
