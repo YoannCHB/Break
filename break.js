@@ -1,11 +1,11 @@
 /*
  * Break.js
  * website --> Comming soon
- * Version: beta - 0.1
+ * Version: 1.0
  *
  * Copyright Yoann Charbonnier
  * Released under license
- * https://github.com/YoannCHB/Break/break.js
+ * https://github.com/YoannCHB/Break
 */
 
 const auto_url = function(u){
