@@ -49,6 +49,7 @@ Command:
 * element.error
 * element.correctURL
 * element.listen
+* element.method
 
 ## Tools:
 * [[API]](https://github.com/YoannCHB/Break/blob/master/doc/api.md)
