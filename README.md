@@ -1,5 +1,4 @@
 # Break - beta (in build)
------------------
 
 [![npm](https://img.shields.io/npm/v/anticore.svg?style=plastic)]()
 [![Downloads](https://img.shields.io/npm/dt/anticore.svg?style=plastic)]()
