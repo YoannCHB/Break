@@ -19,9 +19,10 @@ const auto_url = function(u){
     }
 }
 
-class Request{
+class BricksRequest{
     constructor(url){
         this.type = null;
+        this.method = 'GET';
         this.url = url;
         this.connected = false;
         this.error = false;
