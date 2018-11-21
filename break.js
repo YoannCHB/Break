@@ -30,9 +30,14 @@ class Request{
         this.proto3 = null;
         this.json = null;
         this.response = null;
+        this.correctURL = false;
         this.f = {};
         this.send = null;
     }
+}
+
+Request.prototype.listen = function(p){
+    this.url += ":"+p;
 }
 
 const auto_proto3 = function(el, url){
@@ -54,9 +59,9 @@ const auto_proto2 = function(el, url){
         return '';
     }
     } else {
-        let s = url.replace('https', "wss") != url ? url.replace('https', "wss") : url.replace('http', 'ws');
+        url = url.replace('https', "wss") != url ? url.replace('https', "wss") : url.replace('http', 'ws');
         try {
-        el.proto2 = new WebSocket(s);
+        el.proto2 = new WebSocket(url);
         }
         catch(e){
             auto_proto3(el, url);
@@ -73,6 +78,7 @@ const auto_proto2 = function(el, url){
         el.connected = true;
         el.response = false;
         el.json = false;
+        el.correctURL = url;
         el.send = function(text){
             this.proto2.send(text);
         }
@@ -98,8 +104,11 @@ Request.prototype.connect = function(url){
     let element = this;
     url = url || this.url;
     if(!auto_url(url)){
-        console.error('INVALID URL: '+element.url);
-        return false;
+        url = document.location.href+url;
+        if(!auto_url(url)){
+            console.error('INVALID URL: '+element.url);
+            return false;
+        }
     }
     this.proto1.open('GET', url);
     this.proto1.onerror = function(e){
@@ -110,6 +119,7 @@ Request.prototype.connect = function(url){
     this.proto1.onload = function(){
         element.type = ["XMLHttpRequest", 'GET', element.responseType];
         element.connected = true;
+        element.coorectURL = url;
         element.response = element.proto1.response;
         element.send = function(text){
             let req = new XMLHttpRequest();
@@ -133,6 +143,12 @@ Request.prototype.connect = function(url){
 }
 
 Request.prototype.on = function(p, call){
+    try{
+        p = p.toLowerCase();
+    }
+    catch(e){
+        p = p;
+    }
    switch(p){
        case "message":
        this.f.message = call;
