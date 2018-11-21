@@ -1,6 +1,6 @@
 
 * <script src="break.js">
-* <script src="break.min.js"> //COMMING SOON
+* <script src="break.min.js">
 	
 Exemple:
 -------------------------------------------------
