@@ -1,2 +1,2 @@
-- v beta-0.1
-- v 1.0
+- v beta(0.1)
+- v 1.0 (current)
