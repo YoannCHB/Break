@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Example Break</title>
+        <script src="break.js"></script>
+        <style>
+        textarea{
+            width: 75%;
+            height: 75%;
+        }
+        </style>
+    </head>
+    <body>
+        <textarea id="cmd">
+var req = new Request("https://echo.websocket.org");
+req.on('message', function(msg){
+    console.log(msg.data);
+});
+req.on('error', function(e){
+    console.error(e);
+})
+req.on('close', function(e){
+    console.warn("Server closed ! : "+e);
+})
+req.on('open', function(response){
+    if(response){
+        console.info(response); //JSON
+    }
+    alert("Connected: "+req.connected);
+    req.send('Connection effectued');
+})
+//req.port(3000);
+req.connect();
+        </textarea>
+        <button onclick="javascript:test()">Run</button>
+    </body>
+    <script>
+        function test(){
+            let c = document.getElementById('cmd').value;
+            eval(c);
+        }
+    </script>
+</html>
