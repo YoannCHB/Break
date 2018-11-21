@@ -17,11 +17,13 @@ Break allows you to easily create any type of request to a server. But not only 
 * Send
 * POST
 * GET
+* PORT
 
 # Support - WebSocket:
 * CONNECTION
 * SEND
 * MESSAGES
+* PORT
 
 # Support- All:
 * Mesage
@@ -39,6 +41,7 @@ Command:
 * element.connected
 * element.error
 * element.correctURL
+* element.listen
 
 ## Tools:
 * [[API]](https://github.com/YoannCHB/Break/blob/master/doc/api.md)
