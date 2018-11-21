@@ -4,6 +4,10 @@ BREAK IS AN APPLICATION TO MAKE AUTOMATICALLY A REQUEST ON A SERVER AND AUTOMATI
 
 #<img alt="Break" title="Break" src="img/break.png"/>
 
+## Why you need to use "Break" ?
+
+Break allows you to easily create any type of request to a server. But not only ! It automatically corrects the urls in case of problems and will come to define itself automatically: the url, the type of request and the type of send. Break also allows response backup as well as a responseJSON if possible. Finally, it automatically detects and manages any type of error and sends it back to you in case of problems!
+
 # Support - XMLHttpRequest:
 * Send
 * POST
