@@ -1,6 +1,7 @@
 # Break - beta (in build)
 BREAK IS AN APPLICATION TO MAKE AUTOMATICALLY A REQUEST ON A SERVER AND AUTOMATICALLY SETUP THE URL ON ERROR (http to ws) !
 -----------------
+
 #<img alt="Break" title="Break" src="img/break.png"/>
 
 # Support - XMLHttpRequest:
@@ -21,7 +22,13 @@ BREAK IS AN APPLICATION TO MAKE AUTOMATICALLY A REQUEST ON A SERVER AND AUTOMATI
 
 Command:
 ---------------------------------------------------------------------
-> .type, .json, .url, .response, .send, .connected, .error
+* .type
+* .json
+* .url, 
+* .response
+* .send
+* .connected
+* .error
 
 Exemple:
 -------------------------------------------------
