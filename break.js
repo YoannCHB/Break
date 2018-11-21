@@ -1,3 +1,13 @@
+/*
+ * Break.js
+ * website --> Comming soon
+ * Version: beta - 0.1
+ *
+ * Copyright Yoann Charbonnier
+ * Released under license
+ * https://github.com/YoannCHB/Break/break.js
+*/
+
 const auto_url = function(u){
     try {
         let url = new window.URL(u);
