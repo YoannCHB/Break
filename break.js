@@ -19,6 +19,8 @@ const auto_url = function(u){
     }
 }
 
+const auto_ext = ["sncf","org","com","us","fr","xyz","sony","sexy","eus","gift","info","st","int","net","pro","post","wiki","onl","cat"];
+
 class BreakRequest{
     constructor(url){
         this.type = null;
@@ -101,21 +103,35 @@ const auto_proto2 = function(el, url){
     }
 }
 
+const auto_verif = function(url){
+    if(url.indexOf('http') + url.indexOf('ws') != -2){
+        return true;
+    }
+
+    if(url.indexOf('.')){
+        let s = url.split('.');
+        let g = s[s.length-1];
+    for(var i = 0; i < auto_ext.length; i++){
+        if(g == auto_ext[i]){
+            return false;
+        }
+    }
+    }
+    return true;
+}
+
 BreakRequest.prototype.connect = function(url){
     let element = this;
-    let save = url;
     url = url || this.url;
+    let save = url;
+    if(!auto_verif(url)){
+        url = "http://"+url;
+    }
     if(!auto_url(url)){
-        url = "https://"+save;
+        url = document.location.href+url;
         if(!auto_url(url)){
-            url = "http://"+save;
-            if(!auto_url(url)){
-                url = document.location.href+url;
-                if(!auto_url(url)){
-                    console.error('INVALID URL: '+element.url);
-                    return false;
-                }
-            }
+            console.error('INVALID URL: '+element.url);
+            return false;
         }
     }
     this.proto1.open('GET', url);
