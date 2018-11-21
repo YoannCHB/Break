@@ -2,16 +2,22 @@
 BREAK IS AN APPLICATION TO MAKE AUTOMATICALLY A REQUEST ON A SERVER AND AUTOMATICALLY SETUP THE URL ON ERROR (http to ws) !
 -----------------
 #<img alt="Break" title="Break" src="img/break.png"/>
-Ne fonctionne pas sur Visual Studio !
 
 # Support - XMLHttpRequest:
-> send, post, get.
+* Send
+* POST
+* GET
 
 # Support - WebSocket:
-> messages, send, connection.
+* CONNECTION
+* SEND
+* MESSAGES
 
 # Break.On:
-> message, open, close, error
+* Mesage
+* Open
+* Close
+* Error
 
 Command:
 ---------------------------------------------------------------------
