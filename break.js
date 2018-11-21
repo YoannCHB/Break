@@ -105,7 +105,7 @@ const auto_proto2 = function(el, url){
 
 const auto_verif = function(url){
     if(url.indexOf('http') + url.indexOf('ws') != -2){
-        return true;
+        return false;
     }
 
     if(url.indexOf('.')){
@@ -113,19 +113,23 @@ const auto_verif = function(url){
         let g = s[s.length-1];
     for(var i = 0; i < auto_ext.length; i++){
         if(g == auto_ext[i]){
-            return false;
+            return "http://";
         }
     }
     }
-    return true;
+    if(url.indexOf('/') == -1){
+        return "/";
+    }
+    return false;
 }
 
 BreakRequest.prototype.connect = function(url){
     let element = this;
     url = url || this.url;
     let save = url;
-    if(!auto_verif(url)){
-        url = "http://"+url;
+    let complement = auto_verif(url);
+    if(complement){
+        url = complement+url;
     }
     if(!auto_url(url)){
         url = document.location.href+url;
@@ -153,7 +157,12 @@ BreakRequest.prototype.connect = function(url){
             }
             req.send(text);
         }
-        let j = JSON.parse(element.proto1.response);
+        try{
+            let j = JSON.parse(element.proto1.response);
+        }
+        catch(e){
+            let j = false;
+        }
         if(j){
             element.json = j;
         }
