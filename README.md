@@ -1,4 +1,4 @@
-# Break - v1.0
+# Break - v1.2
 
 [![npm](https://img.shields.io/npm/v/anticore.svg?style=plastic)]()
 [![Download](https://img.shields.io/chocolatey/dt/scriptcs.svg?style=plastic)](https://github.com/YoannCHB/Break/blob/master/break.js)
@@ -11,7 +11,7 @@
 Break allows you to easily create any type of request to a server. But not only ! It automatically corrects the urls in case of problems and will come to define itself automatically: the url, the type of request and the type of send. Break also allows response backup as well as a responseJSON if possible. Finally, it automatically detects and manages any type of error and sends it back to you in case of problems!
 * We can say that Break fully manages your requests and any type of response from the server.
 
-## What is new in v1 ?
+## What is new in v1.2 ?
 
 * Two new system of correction in the URL look at the [[API]](https://github.com/YoannCHB/Break/blob/master/doc/api.md)
 * Request become BreakRequest
