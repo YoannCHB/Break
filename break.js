@@ -1,7 +1,7 @@
 /*
  * Break.js
  * website --> Comming soon
- * Version: 1.0
+ * Version: 1.2
  *
  * Copyright Yoann Charbonnier
  * Released under license
