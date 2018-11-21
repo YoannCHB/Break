@@ -52,3 +52,16 @@ Launch the connection:
 ```js
 request.connect("new url || auto setup to the default url");
 ```
+
+## Extensions:
+
+```js
+req.type //RETRUN THE TYPE OF REQUEST USED
+req.json //RETURN THE RESPONSE IN JSON 
+req.url //RETURN THE URL
+req.response //RETURN THE RESPONSE
+req.send //SEND
+req.connected //RETURN THE STATUS
+req.error //RETURN THE STATUS
+req.correctURL //RETURN CORRIGED URL
+```
