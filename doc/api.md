@@ -1,6 +1,6 @@
 
 * <script src="break.js">
-* <script src="break.min.js">
+* <script src="break.min.js"> //COMMING SOON
 	
 Exemple:
 -------------------------------------------------
@@ -61,9 +61,10 @@ req.type //RETRUN THE TYPE OF REQUEST USED
 req.json //RETURN THE RESPONSE IN JSON 
 req.url //RETURN THE URL
 req.response //RETURN THE RESPONSE
-req.send //SEND
+req.send //SEND MATHOD OR POST METHOD
 req.connected //RETURN THE STATUS
 req.error //RETURN THE STATUS
 req.correctURL //RETURN CORRIGED URL
 req.listen //FUNCTION TO SET A PORT (example: https://localhost:3000)
+req.method //ALWAYS RETURN 'GET'
 ```
