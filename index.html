@@ -20,14 +20,14 @@ req.on('error', function(e){
 })
 req.on('close', function(e){
     console.warn("Server closed ! : "+e);
-})
+});
 req.on('open', function(response){
     if(response){
         console.info(response); //JSON
     }
-    alert("Connected: "+req.connected);
+    alert("Connected: "+req.connected+" to "+req.correctURL);
     req.send('Connection effectued');
-})
+});
 //req.listen(3000);
 req.connect();
         </textarea>
