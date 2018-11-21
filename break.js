@@ -37,7 +37,7 @@ class BricksRequest{
     }
 }
 
-Request.prototype.listen = function(p){
+BricksRequest.prototype.listen = function(p){
     this.url += ":"+p;
 }
 
@@ -101,7 +101,7 @@ const auto_proto2 = function(el, url){
     }
 }
 
-Request.prototype.connect = function(url){
+BricksRequest.prototype.connect = function(url){
     let element = this;
     url = url || this.url;
     if(!auto_url(url)){
@@ -143,7 +143,7 @@ Request.prototype.connect = function(url){
     this.proto1.send();
 }
 
-Request.prototype.on = function(p, call){
+BricksRequest.prototype.on = function(p, call){
     try{
         p = p.toLowerCase();
     }
