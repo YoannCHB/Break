@@ -1,7 +1,0 @@
-XMLHttpRequest()
->GET
->POST
-
-WebSocket()
->SEND
->GET MESSAGES
