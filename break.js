@@ -158,12 +158,12 @@ BreakRequest.prototype.connect = function(url){
             req.send(text);
         }
         try{
-            let j = JSON.parse(element.proto1.response);
+            var jsonGet = JSON.parse(element.proto1.response);
         }
         catch(e){
-            let j = false;
+            var jsonGet = false;
         }
-        if(j){
+        if(jsonGet){
             element.json = j;
         }
         if(element.f.open){
