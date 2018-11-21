@@ -1,6 +1,8 @@
 
 * <script src="break.js">
 * <script src="break.min.js">
+
+## It's a shorcut it's not the full API ! There are just 10% of what you can do !
 	
 Exemple:
 -------------------------------------------------
