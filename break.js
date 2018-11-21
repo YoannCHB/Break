@@ -103,12 +103,19 @@ const auto_proto2 = function(el, url){
 
 BreakRequest.prototype.connect = function(url){
     let element = this;
+    let save = url;
     url = url || this.url;
     if(!auto_url(url)){
         url = document.location.href+url;
         if(!auto_url(url)){
-            console.error('INVALID URL: '+element.url);
-            return false;
+            url = "http://"+save;
+            if(!auto_url(url)){
+                url = "https://"+save;
+                if(!auto_url(url)){
+                    console.error('INVALID URL: '+element.url);
+                    return false;
+                }
+            }
         }
     }
     this.proto1.open('GET', url);
