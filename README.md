@@ -3,7 +3,7 @@
 > v 1.0 the 21/11/2018
 
 [![npm](https://img.shields.io/npm/v/anticore.svg?style=plastic)]()
-[![Download](https://img.shields.io/chocolatey/dt/scriptcs.svg?style=plastic)](https://github.com/YoannCHB/Break/break.js)
+[![Download](https://img.shields.io/chocolatey/dt/scriptcs.svg?style=plastic)](https://github.com/YoannCHB/Break/blob/master/break.js)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 #<img alt="Break" title="Break" src="img/break.png"/>
