@@ -67,3 +67,10 @@ req.error //RETURN THE STATUS
 req.correctURL //RETURN CORRIGED URL
 req.listen //FUNCTION TO SET A PORT (example: https://localhost:3000)
 ```
+
+## URL format:
+
+It's the supported format for the auto correction, you can modify them.
+```js
+const auto_ext = ["sncf","org","com","us","fr","xyz","sony","sexy","eus","gift","info","st","int","net","pro","post","wiki","onl","cat"];
+```
