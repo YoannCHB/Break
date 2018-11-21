@@ -42,7 +42,7 @@ Command:
 Exemple:
 -------------------------------------------------
 ```js
-var req = new Request("https://echo.websocket.org");
+var req = new Request("https://echo.websocket.org"); //BREAK AUTOMATICALLY SET THE URL ON 'wss://echo.websocket.org'
 req.on('message', function(msg){
   console.log(msg.data);
 });
