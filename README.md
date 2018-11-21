@@ -33,11 +33,12 @@ Command:
 ---------------------------------------------------------------------
 * element.type
 * element.json
-* element.url, 
+* element.url
 * element.response
 * element.send
 * element.connected
 * element.error
+* element.correctURL
 
 ## Tools:
 * [[API]](https://github.com/YoannCHB/Break/blob/master/doc/api.md)
