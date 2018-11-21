@@ -14,7 +14,7 @@ BREAK IS AN APPLICATION TO MAKE AUTOMATICALLY A REQUEST ON A SERVER AND AUTOMATI
 * SEND
 * MESSAGES
 
-# Break.On:
+# Element.on:
 * Mesage
 * Open
 * Close
@@ -22,13 +22,13 @@ BREAK IS AN APPLICATION TO MAKE AUTOMATICALLY A REQUEST ON A SERVER AND AUTOMATI
 
 Command:
 ---------------------------------------------------------------------
-* .type
-* .json
-* .url, 
-* .response
-* .send
-* .connected
-* .error
+* element.type
+* element.json
+* element.url, 
+* element.response
+* element.send
+* element.connected
+* element.error
 
 Exemple:
 -------------------------------------------------
