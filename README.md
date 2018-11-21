@@ -1,6 +1,4 @@
-# Break - beta (in build)
-
-> v 1.0 the 21/11/2018
+# Break - v1.0
 
 [![npm](https://img.shields.io/npm/v/anticore.svg?style=plastic)]()
 [![Download](https://img.shields.io/chocolatey/dt/scriptcs.svg?style=plastic)](https://github.com/YoannCHB/Break/blob/master/break.js)
