@@ -11,16 +11,16 @@ req.on('message', function(msg){
 });
 req.on('error', function(e){
   console.error(e);
-})
+});
 req.on('close', function(e){
   console.warn("Server closed ! : "+e);
-})
+});
 req.on('open', function(response){
 	if(response){
 		console.info(response); //JSON
 	}
 	req.send('Connection effectued');
-})
+});
 //req.listen(3000);
 req.connect();
 ```
