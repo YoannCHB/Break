@@ -1,5 +1,7 @@
 # Break - v1.2
 
+Donnation: https://paypal.me/pools/c/89QrGuFsVk;
+
 [![npm](https://img.shields.io/npm/v/anticore.svg?style=plastic)]()
 [![Download](https://img.shields.io/chocolatey/dt/scriptcs.svg?style=plastic)](https://github.com/YoannCHB/Break/blob/master/break.js)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://fr.wikipedia.org/wiki/JavaScript)
