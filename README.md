@@ -58,6 +58,9 @@ Command:
 * element.correctURL
 * element.listen
 * element.method
+* element.responseType
+* element.writeHead
+* element.headerMap
 
 ## Tools:
 * [[API]](https://github.com/YoannCHB/Break/blob/master/doc/api.md)
