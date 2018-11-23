@@ -1,7 +1,7 @@
 /*
  * Break.js
  * website --> Comming soon
- * Version: 1.2
+ * Version: 2.0
  *
  * Copyright Yoann Charbonnier
  * Released under license
@@ -35,8 +35,15 @@ class BreakRequest{
         this.response = null;
         this.correctURL = false;
         this.f = {};
+        this.headers = [];
+        this.responseType = false;
+        this.headerMap = [];
         this.send = null;
     }
+}
+
+BreakRequest.prototype.writeHead = function(h, v){
+    this.headers.push(new Array(h, v));
 }
 
 BreakRequest.prototype.listen = function(p){
@@ -104,10 +111,11 @@ const auto_proto2 = function(el, url){
 }
 
 const auto_verif = function(url){
-    if(url.indexOf('http') + url.indexOf('ws') != -2){
+    if(url.indexOf('http') + url.indexOf('ws') == -2){
+        return "https://";
+    } else {
         return false;
     }
-
     if(url.indexOf('.')){
         let s = url.split('.');
         let g = s[s.length-1];
@@ -139,12 +147,34 @@ BreakRequest.prototype.connect = function(url){
         }
     }
     this.proto1.open('GET', url);
+    //HEADERS
+    for(var i = 0; i < this.headers.length; i++){
+        this.proto1.setRequestHeader(this.headers[i][0], this.headers[i][1])
+    }
+    //RESPONSE TYPE
+    if(this.responseType){
+        this.proto1.responseType = this.responseType;
+    }
     this.proto1.onerror = function(e){
         //console.error(e);
         element.send = false;
         auto_proto2(element, url);
     }
     this.proto1.onload = function(){
+
+        // Get the raw header string
+        let headers = element.proto1.getAllResponseHeaders();
+        // Convert the header string into an array
+        // of individual headers
+        let arr = headers.trim().split(/[\r\n]+/);
+        // Create a map of header names to values
+        arr.forEach(function (line) {
+        var parts = line.split(': ');
+        var header = parts.shift();
+        var value = parts.join(': ');
+        element.headerMap[header] = value;
+        });
+
         element.type = ["XMLHttpRequest", 'GET', element.responseType];
         element.connected = true;
         element.correctURL = url;
@@ -164,7 +194,7 @@ BreakRequest.prototype.connect = function(url){
             var jsonGet = false;
         }
         if(jsonGet){
-            element.json = j;
+            element.json = jsonGet;
         }
         if(element.f.open){
             element.f.open(element.proto1.response);
