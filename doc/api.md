@@ -6,6 +6,7 @@ Exemple:
 -------------------------------------------------
 ```js
 var req = new BreakRequest("https://echo.websocket.org"); //BREAK AUTOMATICALLY SET THE URL ON 'wss://echo.websocket.org'
+//req.responseType = "json";
 req.on('message', function(msg){
   console.log(msg.data);
 });
@@ -67,4 +68,7 @@ req.error //RETURN THE STATUS
 req.correctURL //RETURN CORRIGED URL
 req.listen //FUNCTION TO SET A PORT (example: https://localhost:3000)
 req.method //ALWAYS RETURN 'GET'
+req.responseType //SET THE RESPONSE TYPE
+req.headerMap //GET ALL THE HEADERS
+req.writeHead //SET THE HEADERS
 ```
