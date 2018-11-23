@@ -1,4 +1,5 @@
 - v beta 0.1
 - v 1.0
 - v 1.1
-- v 1.2 (current)
+- v 1.2 
+- v2.0 (current)
