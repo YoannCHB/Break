@@ -27,6 +27,8 @@ Break allows you to easily create any type of request to a server. But not only 
 * API update
 
 # Support - XMLHttpRequest:
+* SetRequestHeader
+* getAllResponseHeader
 * Send
 * POST
 * GET
