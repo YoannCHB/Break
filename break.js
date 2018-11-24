@@ -25,7 +25,9 @@ class BreakRequest{
     constructor(url){
         this.type = null;
         this.method = 'GET';
+        this.request = false;
         this.url = url;
+        this.loop = true;
         this.connected = false;
         this.error = false;
         this.proto1 = new XMLHttpRequest();
@@ -85,6 +87,7 @@ const auto_proto2 = function(el, url){
     }
     el.proto2.onopen = function(){
         el.type = ['WebSocket']
+        el.request = el.proto;
         el.connected = true;
         el.response = false;
         el.json = false;
@@ -146,7 +149,7 @@ BreakRequest.prototype.connect = function(url){
             return false;
         }
     }
-    this.proto1.open('GET', url);
+    this.proto1.open(this.method, url, this.loop);
     //HEADERS
     for(var i = 0; i < this.headers.length; i++){
         this.proto1.setRequestHeader(this.headers[i][0], this.headers[i][1])
@@ -175,6 +178,7 @@ BreakRequest.prototype.connect = function(url){
         element.headerMap[header] = value;
         });
 
+        element.request = element.proto1;
         element.type = ["XMLHttpRequest", 'GET', element.responseType];
         element.connected = true;
         element.correctURL = url;
