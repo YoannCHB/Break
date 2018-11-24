@@ -61,6 +61,8 @@ Command:
 * element.responseType
 * element.writeHead
 * element.headerMap
+* element.request
+* element.loop
 
 ## Tools:
 * [[API]](https://github.com/YoannCHB/Break/blob/master/doc/api.md)
