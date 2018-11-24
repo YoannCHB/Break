@@ -68,6 +68,8 @@ req.connected //RETURN THE STATUS
 req.error //RETURN THE STATUS
 req.correctURL //RETURN CORRIGED URL
 req.listen //FUNCTION TO SET A PORT (example: https://localhost:3000)
+req.request //GET THE REQUEST
+req.loop //EQUIVAL TO THE ASYNC //DEFAULT IN TRUE
 ```
 
 ## URL format:
