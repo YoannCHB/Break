@@ -40,6 +40,11 @@ Break allows you to easily create any type of request to a server. But not only 
 * MESSAGES
 * PORT
 
+# Support - EventSource:
+* CONNECTION
+* MESSAGES
+* PORT
+
 # Support- All:
 * Mesage
 * Open
