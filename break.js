@@ -60,6 +60,63 @@ const auto_proto3 = function(el, url){
     el.send = false;
 }
 
+
+//Window.EventSource
+const auto_evsource = function(el, url){
+    try{
+
+        //SET THE HEADERS
+        if(el.headers.length > 0){
+            var h  = {};
+            for(var i = 0; i < el.headers.length; i++){
+                h[el.headers[i][0]] = el.headers[i][1];
+            }
+            //console.log(h);
+        }
+
+        if(h){
+            el.proto3 = new window.EventSource(url, h);
+        } else {
+            el.proto3 = new window.EventSource(url);
+        }
+        
+        el.proto3.onerror = function(e){
+            auto_proto2(el, url);
+        }
+
+        el.proto3.onopen = function(){
+            el.type = ['EventSource']
+            el.request = el.proto3;
+            el.connected = true;
+            el.response = false;
+            el.json = false;
+            el.correctURL = url;
+            if(el.f.open){
+                el.f.open(el.proto3);
+            }
+        }
+
+        el.proto3.onmessage = function(e){
+            if(el.f.message){
+                el.f.message(e);
+            }
+        }
+
+        el.proto3.onclose = function(e){
+            if(el.f.close){
+                el.f.close(e);
+            }
+            el.send = false;
+            console.warn('Server closed');
+        }
+    }
+    catch(e){
+        auto_proto2(el, url);
+    }
+}
+//FIN EventSource
+
+
 const auto_proto2 = function(el, url){
     let test = url.indexOf('http');
     if(test == -1){
@@ -87,7 +144,7 @@ const auto_proto2 = function(el, url){
     }
     el.proto2.onopen = function(){
         el.type = ['WebSocket']
-        el.request = el.proto;
+        el.request = el.proto2;
         el.connected = true;
         el.response = false;
         el.json = false;
@@ -161,7 +218,7 @@ BreakRequest.prototype.connect = function(url){
     this.proto1.onerror = function(e){
         //console.error(e);
         element.send = false;
-        auto_proto2(element, url);
+        auto_evsource(element, url);
     }
     this.proto1.onload = function(){
 
