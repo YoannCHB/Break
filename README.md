@@ -15,16 +15,16 @@ Break allows you to easily create any type of request to a server. But not only 
 
 ## What is new in v2.0?
 
-* You can now get and set the headers
-* You can set the responseType
-* Two new system of correction in the URL look at the [[API]](https://github.com/YoannCHB/Break/blob/master/doc/api.md)
-* Request become BreakRequest
-* break.min.js is here !
-* Support port (listen)
-* New Command: element.correctURL, element.listen
-* Bug setting
-* Readme update
-* API update
+- [x] You can now get and set the headers
+- [x] You can set the responseType
+- [x] Two new system of correction in the URL look at the [[API]](https://github.com/YoannCHB/Break/blob/master/doc/api.md)
+- [x] Request become BreakRequest
+- [x] break.min.js is here !
+- [x] Support port (listen)
+- [x] New Command: element.correctURL, element.listen
+- [x] Bug setting
+- [x] Readme update
+- [x] API update
 
 # Support - XMLHttpRequest:
 * SetRequestHeader
