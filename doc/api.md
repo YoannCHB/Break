@@ -71,4 +71,5 @@ req.method //ALWAYS RETURN 'GET'
 req.responseType //SET THE RESPONSE TYPE
 req.headerMap //GET ALL THE HEADERS
 req.writeHead //SET THE HEADERS
+req.ext //SET THE EXTENSION - FOR EXAMPLE "www.google.com" --> req.ext('com');
 ```
