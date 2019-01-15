@@ -68,6 +68,7 @@ Command:
 * element.headerMap
 * element.request
 * element.loop
+* element.ext
 
 ## Tools:
 * [[API]](https://github.com/YoannCHB/Break/blob/master/doc/api.md)
