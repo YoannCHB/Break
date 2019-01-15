@@ -19,7 +19,7 @@ const auto_url = function(u){
     }
 }
 
-const auto_ext = ["sncf","org","com","us","fr","xyz","sony","sexy","eus","gift","info","st","int","net","pro","post","wiki","onl","cat"];
+var auto_ext = ["sncf","org","com","us","fr","xyz","sony","sexy","eus","gift","info","st","int","net","pro","post","wiki","onl","cat"];
 
 class BreakRequest{
     constructor(url){
@@ -42,6 +42,10 @@ class BreakRequest{
         this.headerMap = [];
         this.send = null;
     }
+}
+
+BreakRequest.prototype.ext = function(e){
+    auto_ext.push(e);
 }
 
 BreakRequest.prototype.writeHead = function(h, v){
