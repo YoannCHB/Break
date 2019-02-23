@@ -1,6 +1,6 @@
 # Break - v2.0
 
-Donate :) https://paypal.me/pools/c/89QrGuFsVk;
+Support me :) https://paypal.me/pools/c/89QrGuFsVk;
 
 [![npm](https://img.shields.io/npm/v/anticore.svg?style=plastic)]()
 [![Download](https://img.shields.io/chocolatey/dt/scriptcs.svg?style=plastic)](https://github.com/YoannCHB/Break/blob/gh-pages/break.js)
