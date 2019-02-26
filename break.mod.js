@@ -1,16 +1,16 @@
 /*
- * Break.js
+ * Break.js - Module
  * website --> Comming soon
- * Version: 2.1
+ * Version: 2.1 (beta)
  *
  * Copyright Yoann Charbonnier
  * Released under license
  * https://github.com/YoannCHB/Break
 */
 
-console.log('* Break.js');
+console.log('* Break.js - Module');
 console.log('* website --> Comming soon');
-console.log('* Version: 2.1');
+console.log('* Version: 2.1 (beta)');
 console.log('*');
 console.log('* Copyright Yoann Charbonnier');
 console.log('* Released under license');
