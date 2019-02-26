@@ -1,7 +1,7 @@
 /*
  * Break.js
  * website --> Comming soon
- * Version: 2.0
+ * Version: 2.1
  *
  * Copyright Yoann Charbonnier
  * Released under license
@@ -44,6 +44,7 @@ class BreakRequest{
     }
 }
 
+//EXTENSION URL (EXEMPLE: 'com')
 BreakRequest.prototype.ext = function(e){
     auto_ext.push(e);
 }
@@ -52,8 +53,27 @@ BreakRequest.prototype.writeHead = function(h, v){
     this.headers.push(new Array(h, v));
 }
 
+//PORT
 BreakRequest.prototype.listen = function(p){
-    this.url += ":"+p;
+    let cache = this.url.split('/');
+    let verif = false;
+    let final = "";
+    for(var n in cache){
+        if(cache[n].indexOf('.') != -1 && !verif){
+            if(cache[n].indexOf(':') != -1){ //VERIF SI IL Y ADEJA UN PORT
+                console.error('Port already open !');
+                final += cache[n]+"/";
+                verif = true;
+            } else {
+                final += cache[n]+":"+p+"/"; //RAJOUTE PORT
+                verif = true;
+            }
+        } else {
+            final += cache[n]+"/";
+        }
+    }
+    this.url = final;
+    console.warn("Port open on: "+this.url);
 }
 
 const auto_proto3 = function(el, url){
