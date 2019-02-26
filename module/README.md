@@ -1,6 +1,6 @@
 # Break - v2.1 - Module
 
-# How to Use:
+How to Use:
 -------------------------------------------------
 - [X] You need to install XMLHttpRequest with:
 ```js
