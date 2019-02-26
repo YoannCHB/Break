@@ -1,7 +1,12 @@
 # Break - v2.1
 
-Support me :) https://paypal.me/pools/c/89QrGuFsVk;
+- [X] Support me :) https://paypal.me/pools/c/89QrGuFsVk;
 - [x] NPM: https://www.npmjs.com/package/breakrequest
+
+```js
+npm i xmlhttprequest
+npm i breakrequest
+```
 
 [![npm](https://img.shields.io/npm/v/anticore.svg?style=plastic)](https://github.com/YoannCHB/Break/tree/gh-pages/module)
 [![Download](https://img.shields.io/chocolatey/dt/scriptcs.svg?style=plastic)](https://github.com/YoannCHB/Break/blob/gh-pages/break.js)
