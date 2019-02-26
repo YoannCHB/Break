@@ -25,6 +25,7 @@ Break allows you to easily create any type of request to a server. But not only 
 - [x] Bug setting
 - [x] Readme update
 - [x] API update
+- [X] Module added
 
 # Support - XMLHttpRequest:
 * SetRequestHeader
