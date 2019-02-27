@@ -1,0 +1,29 @@
+{
+  "name": "breakrequest",
+  "version": "2.1.3",
+  "description": "BREAK IS AN EASY LIBRARY TO MAKE AUTOMATICALLY REQUEST ON SERVER WITHEOUT ERROR!",
+  "main": "break.mod.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoannCHB/Break.git"
+  },
+  "keywords": [
+    "request",
+    "npm",
+    "npm-break",
+    "break",
+    "easy",
+    "simple",
+    "breakrequest",
+    "yoannchb"
+  ],
+  "author": "Yoann Charbonnier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YoannCHB/Break/issues"
+  },
+  "homepage": "https://github.com/YoannCHB/Break#readme"
+}
