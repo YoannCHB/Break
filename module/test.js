@@ -1,7 +1,7 @@
 console.log(require('./break.mod.js'));
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+var XMLHttpRequest = require("w3c-xmlhttprequest").XMLHttpRequest;
 var t = require('./break.mod.js');
-var req = new t.BreakRequest("https://echo.websocket.org");
+var req = new t.BreakRequest("https://fr.wikipedia.org/w/api.php?%20action=opensearch&format=json&origin=*&profile=normal&search=Victor Hugo");
 req.on('message', function(msg){
     console.log(msg.data);
 });
@@ -12,6 +12,7 @@ req.on('close', function(e){
     console.warn("Server closed ! : "+e);
 });
 req.on('open', function(response){
+    console.log(response)
     if(response){
         console.info(response); //JSON
     }
