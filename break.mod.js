@@ -10,14 +10,14 @@
 
 console.log('* Break.js - Module');
 console.log('* website --> Comming soon');
-console.log('* Version: 2.1 (beta)');
+console.log('* Version: 2.1.5 (beta)');
 console.log('*');
 console.log('* Copyright Yoann Charbonnier');
 console.log('* Released under license');
 console.log('* https://github.com/YoannCHB/Break');
 console.log('');
 
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+var XMLHttpRequest = require('w3c-xmlhttprequest').XMLHttpRequest;
 
 const auto_url = function(u){
     try {
