@@ -10,7 +10,7 @@
 
 console.log('* Break.js - Module');
 console.log('* website --> Comming soon');
-console.log('* Version: 2.1.9 (beta)');
+console.log('* Version: 2.1.10 (beta)');
 console.log('*');
 console.log('* Copyright Yoann Charbonnier');
 console.log('* Released under license');

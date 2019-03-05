@@ -1,6 +1,6 @@
 {
   "name": "breakrequest",
-  "version": "2.1.9",
+  "version": "2.1.10",
   "description": "BREAK IS AN EASY LIBRARY TO MAKE AUTOMATICALLY REQUEST ON SERVER WITHEOUT ERROR!",
   "main": "break.mod.js",
   "scripts": {
@@ -23,7 +23,11 @@
     "easy",
     "simple",
     "breakrequest",
-    "yoannchb"
+    "yoannchb",
+    "json",
+    "xml",
+    "http",
+    "server"
   ],
   "author": "Yoann Charbonnier",
   "license": "ISC",
