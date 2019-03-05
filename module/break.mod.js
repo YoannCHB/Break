@@ -10,7 +10,7 @@
 
 console.log('* Break.js - Module');
 console.log('* website --> Comming soon');
-console.log('* Version: 2.1.5 (beta)');
+console.log('* Version: 2.1.9 (beta)');
 console.log('*');
 console.log('* Copyright Yoann Charbonnier');
 console.log('* Released under license');
@@ -224,6 +224,9 @@ const auto_verif = function(url){
 }
 
 BreakRequest.prototype.connect = function(url){
+    if(this.url.indexOf('.') == -1){
+
+    }
     let element = this;
     url = url || this.url;
     let save = url;

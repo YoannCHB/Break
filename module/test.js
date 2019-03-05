@@ -1,6 +1,6 @@
-console.log(require('./break.mod.js'));
+console.log(require('breakrequest'));
 var XMLHttpRequest = require("w3c-xmlhttprequest").XMLHttpRequest;
-var t = require('./break.mod.js');
+var t = require('breakrequest');
 var req = new t.BreakRequest("https://fr.wikipedia.org/w/api.php?%20action=opensearch&format=json&origin=*&profile=normal&search=Victor Hugo");
 req.on('message', function(msg){
     console.log(msg.data);

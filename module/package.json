@@ -1,14 +1,15 @@
 {
   "name": "breakrequest",
-  "version": "2.1.5",
+  "version": "2.1.9",
   "description": "BREAK IS AN EASY LIBRARY TO MAKE AUTOMATICALLY REQUEST ON SERVER WITHEOUT ERROR!",
   "main": "break.mod.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "xmlhttprequest": "https://www.npmjs.com/package/xmlhttprequest",
-    "w3c-xmlhttprequest": "https://www.npmjs.com/package/w3c-xmlhttprequest"
+    "module-name": "0.0.1-security",
+    "w3c-xmlhttprequest": "2.1.3",
+    "xmlhttprequest": "1.8.0"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,6 @@
   "bugs": {
     "url": "https://github.com/YoannCHB/Break/issues"
   },
-  "homepage": "https://github.com/YoannCHB/Break#readme"
+  "homepage": "https://github.com/YoannCHB/Break#readme",
+  "devDependencies": {}
 }
