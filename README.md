@@ -4,7 +4,7 @@
 - [x] NPM: https://www.npmjs.com/package/breakrequest
 
 ```js
-npm i xmlhttprequest
+npm i w3c-xmlhttprequest
 npm i breakrequest
 ```
 
